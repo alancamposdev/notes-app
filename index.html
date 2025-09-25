@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App - Organize suas ideias</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Alan Campos Dev" />
+    <meta
+      name="description"
+      content="Aplicativo de anotações simples e eficiente para organizar suas ideias e tarefas."
+    />
+    <meta
+      name="keywords"
+      content="app de anotações, produtividade, organização, tarefas, lembretes"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><img src="./img/icon.png" alt="icone de notas" />Note App</h1>
+      <header class="header">
+        <input id="input-title" type="text" placeholder="Titulo" />
+        <textarea name="" id="" placeholder="Escreva sua nota..."></textarea>
+        <div class="header-controls">
+          <div
+            class="color-swatches"
+            role="toolbar"
+            aria-label="Escolher cor da nota"
+          >
+            <button
+              class="color-swatch"
+              data-color="yellow"
+              aria-pressed="true"
+              title="Amarelo"
+            ></button>
+            <button
+              class="color-swatch"
+              data-color="peach"
+              title="Pêssego"
+            ></button>
+            <button
+              class="color-swatch"
+              data-color="teal"
+              data-selected="false"
+              title="Verde-água"
+            ></button>
+          </div>
+          <button id="btn-create">+ Criar Nota</button>
+        </div>
+      </header>
+      <section class="notes">
+
+        <article class="note">
+          <h3 id="">Primeira Nota</h3>
+          <p>Texto da nota ....</p>
+        </article>     
+    
+      </section>
+
+      <footer class="footer">
+        &copy; <span id="ano">2025</span> Alan Campos Dev
+      </footer>
+    </div>
+  </body>
+</html>
